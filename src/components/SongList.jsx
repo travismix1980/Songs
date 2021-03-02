@@ -23,7 +23,7 @@ class SongList extends Component{
 	render() {
 		return (
 			<div>
-				<h1>SongList</h1>
+				<h2>SongList</h2>
 				<div className="ui divided list">{this.renderList()}</div>
 			</div>
 		);
@@ -31,7 +31,6 @@ class SongList extends Component{
 }
 
 const mapStateToProps = (state) => {
-	console.log(state);
 	return {songs: state.songs};
 }
 
